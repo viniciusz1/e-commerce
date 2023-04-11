@@ -4,6 +4,7 @@ import { CarrinhoComprasComponent } from './carrinho-compras/carrinho-compras.co
 import { HeaderComponent } from './header/header.component';
 import { MenuHeaderComponent } from './menu-header/menu-header.component';
 import { RouterModule } from '@angular/router';
+import { CardProdutoComponent } from './card-produto/card-produto.component';
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     CarrinhoComprasComponent,
     HeaderComponent,
-    MenuHeaderComponent
+    MenuHeaderComponent,
+    CardProdutoComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { RouterModule } from '@angular/router';
   ],exports: [
     CarrinhoComprasComponent,
     HeaderComponent,
-    MenuHeaderComponent
+    MenuHeaderComponent,
+    CardProdutoComponent
   ]
 })
 export class ComponentsModule { }

@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem; height: 500px;">
+  <img [src]="produto?.fotoProduto" class="card-img-top" style="height: 50%;" alt="foto">
+  <div class="card-body">
+    <h5 class="card-title">{{produto?.nomeProduto}}</h5>
+    <div class="d-flex flex-column justify-content-between">
+      <p class="card-text text-truncate" [innerHTML]="produto?.descricaoProduto"></p>
+      <a href="#" class="btn btn-primary">Comprar Produto</a>
+
+    </div>
+  </div>
+  <div class="card-footer">
+    <small class="text-body-secondary">
+     Valor: {{produto?.valorProduto}}
+    </small>
+  </div>
+</div>
