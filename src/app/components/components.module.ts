@@ -14,6 +14,10 @@ import { MenuHeaderComponent } from './menu-header/menu-header.component';
   ],
   imports: [
     CommonModule
+  ],exports: [
+    CarrinhoComprasComponent,
+    HeaderComponent,
+    MenuHeaderComponent
   ]
 })
 export class ComponentsModule { }

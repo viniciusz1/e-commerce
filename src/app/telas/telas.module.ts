@@ -6,6 +6,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { AjudaComponent } from './ajuda/ajuda.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 
@@ -19,7 +20,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     CadastroComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ]
 })
 export class TelasModule { }
