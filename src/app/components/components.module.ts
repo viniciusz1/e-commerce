@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CarrinhoComprasComponent } from './carrinho-compras/carrinho-compras.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuHeaderComponent } from './menu-header/menu-header.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +14,9 @@ import { MenuHeaderComponent } from './menu-header/menu-header.component';
     MenuHeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    
   ],exports: [
     CarrinhoComprasComponent,
     HeaderComponent,
