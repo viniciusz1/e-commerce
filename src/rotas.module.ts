@@ -27,10 +27,6 @@ import { SobreNosComponent } from "./app/telas/sobre-nos/sobre-nos.component";
             component: CadastroComponent
           },
           {
-            path:'login',
-            component: LoginComponent
-          },
-          {
             path:'home',
             component: HomeComponent
           },
@@ -43,6 +39,10 @@ import { SobreNosComponent } from "./app/telas/sobre-nos/sobre-nos.component";
             component: SobreNosComponent
           },
         ]
+      },
+      {
+        path:'login',
+        component: LoginComponent
       }
   ]),],
   exports: [
