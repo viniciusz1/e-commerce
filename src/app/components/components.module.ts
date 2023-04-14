@@ -1,3 +1,4 @@
+import { RotasModule } from 'src/rotas.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarrinhoComprasComponent } from './carrinho-compras/carrinho-compras.component';
@@ -18,7 +19,6 @@ import { CardProdutoComponent } from './card-produto/card-produto.component';
   imports: [
     CommonModule,
     RouterModule,
-    
   ],exports: [
     CarrinhoComprasComponent,
     HeaderComponent,

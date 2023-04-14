@@ -1,4 +1,5 @@
-export let listaProdutos: any=[
+import { Produto } from './../app/models/produto.model';
+export let listaProdutos: Produto[]=[
     {
         fotoProduto: "https://www.gsuplementos.com.br/upload/produto/imagem/m_top-whey-protein-concentrado-1kg-growth-supplements.png",
         nomeProduto: "Whey Protein Concentrado (1KG)",

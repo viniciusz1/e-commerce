@@ -35,7 +35,7 @@ import { SobreNosComponent } from "./app/telas/sobre-nos/sobre-nos.component";
             component: HomeComponent
           },
           {
-            path:'produto',
+            path:'produto/:codigoProduto',
             component: ProdutoComponent
           },
           {
