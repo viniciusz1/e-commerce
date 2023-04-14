@@ -1,1 +1,14 @@
-<p>produto works!</p>
+<div class="container " style="height: 70vh;">
+    <i class="bi bi-arrow-left position-absolute" style="font-size: 3em; cursor: pointer;" [routerLink]="['/home']"  ></i>
+    <div class="row h-100">
+        <div class="col-md-6 my-auto d-flex justify-content-center">
+            <img class="img-fluid" style="width: 20rem;" [src]="produto?.fotoProduto">
+        </div>
+        <div class="col-md-6 my-auto">
+            <h3>{{produto?.nomeProduto}}</h3>
+            <h2><strong>{{produto?.valorProduto | uppercase}}</strong></h2>
+            <p>{{produto?.categoriaProduto}}</p>
+            <p [innerHTML]="produto?.descricaoProduto"></p>
+        </div>
+    </div>
+</div>

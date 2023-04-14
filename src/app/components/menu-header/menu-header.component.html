@@ -1,1 +1,20 @@
-<p>menu-header works!</p>
+<ul class="nav justify-content-center my-3">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" [routerLink]="['/home']"  [queryParams]="{ categoria: 'WheyProtein'}">WHEY PROTEIN</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"  [routerLink]="['/home']"  [queryParams]="{ categoria: 'Creatina'}">CREATINA</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" [routerLink]="['/home']"  [queryParams]="{ categoria: 'WheyProtein'}">PRÉ-TREINO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home']"  [queryParams]="{ categoria: 'Vitamina'}">VITAMINA</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home']"  [queryParams]="{ categoria: 'Carboidrato'}">CARBOIDRATO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home']"  [queryParams]="{ categoria: 'Barras'}">BARRAS</a>
+    </li>
+  </ul>

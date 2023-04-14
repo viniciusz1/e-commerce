@@ -7,6 +7,7 @@ import { CadastroComponent } from "./app/telas/cadastro/cadastro.component";
 import { HomeComponent } from "./app/telas/home/home.component";
 import { LoginComponent } from "./app/telas/login/login.component";
 import { ProdutoComponent } from "./app/telas/produto/produto.component";
+import { SobreNosComponent } from "./app/telas/sobre-nos/sobre-nos.component";
 
 @NgModule({
   declarations: [],
@@ -34,8 +35,12 @@ import { ProdutoComponent } from "./app/telas/produto/produto.component";
             component: HomeComponent
           },
           {
-            path:'produto',
+            path:'produto/:codigoProduto',
             component: ProdutoComponent
+          },
+          {
+            path:'sobre-nos',
+            component: SobreNosComponent
           },
         ]
       }

@@ -1,0 +1,78 @@
+.div-box{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+
+.login-box{
+    height: 70% ;
+    width: 50%;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+
+.lock{
+    outline: none;
+    border-bottom: 1px white solid;
+    align-self: center;
+    height: 10%;
+    width: 60%;
+    margin: 0;
+    display: flex;
+
+    color: white;
+
+}
+.bi-person-circle{
+    border: none;
+    color:white;
+    font-size: 450%;
+    align-self: center;
+}
+input{
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+   
+}
+.bi{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.61);
+}
+button{
+    width: 50%;
+    height: 7%;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px white;
+	transition: all 0.5s;
+	position: relative;
+    
+}
+
+
+
+button:hover{    
+    opacity: 0.5;
+	transform: scale(1,1);
+}
+
+p{
+    margin: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
