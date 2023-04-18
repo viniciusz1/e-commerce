@@ -1,4 +1,4 @@
-<div class="card" style="width: 18rem; height: 62vh; cursor: pointer;" [routerLink]="['/produto/'+produto?.codigoProduto]">
+<!-- <div class="card" style="width: 18rem; height: vh; cursor: pointer;" [routerLink]="['/produto/'+produto?.codigoProduto]">
   <img [src]="produto?.fotoProduto" class="card-img-top p-3" style="height: 60%;" alt="foto">
   <div class="card-body">
     <h5 class="card-title">{{produto?.nomeProduto}}</h5>
@@ -8,4 +8,30 @@
 
   </div>
   <a class="btn btn-primary m-3">Comprar Produto</a>
+</div> -->
+<!-- 
+<div class="card h-100 shadow-sm"> <img [src]="produto?.fotoProduto" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-primary">{{produto?.nomeProduto}}</span>
+      <span class="float-end price-hp">{{produto?.valorProduto}}</span> </div>
+    <h5 class="card-title" [innerHTML]="produto?.descricaoProduto"></h5>
+    <div class="text-center my-4"> <a href="#" class="btn btn-primary">Check offer</a> </div>
+  </div>
+</div> -->
+
+<div class="card-sl" [routerLink]="['/produto/'+produto?.codigoProduto]">
+  <div class="card-image">
+    <img [src]="produto?.fotoProduto" />
+  </div>
+
+  <div class="card-heading text-truncate">
+    {{produto?.nomeProduto}}
+  </div>
+  <div class="card-text" [innerHTML]="produto?.descricaoProduto">
+
+  </div>
+  <div class="card-text">
+    {{produto?.valorProduto}}
+  </div>
+  <a class="card-button"> Comprar</a>
 </div>
