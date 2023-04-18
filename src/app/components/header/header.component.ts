@@ -7,7 +7,6 @@ import { ProdutoService } from 'src/app/services/produto.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  pesquisa=""
   constructor(private produtoService: ProdutoService) { }
   digitouAlgo(pesquisa: HTMLInputElement){
     this.produtoService.mudouCampodePesquisa(pesquisa.value)

@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+    this.produtoService.produtosEmitter.emit(listaProdutos)
     
   }
   produtos: Produto[] | undefined
