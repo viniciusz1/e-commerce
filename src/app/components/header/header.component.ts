@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
+import { ProdutoService } from 'src/app/services/produto.service';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
-
+  pesquisa=""
+  constructor(private produtoService: ProdutoService) { }
+  digitouAlgo(pesquisa: HTMLInputElement){
+    this.produtoService.mudouCampodePesquisa(pesquisa.value)
+  }
   ngOnInit(): void {
   }
 

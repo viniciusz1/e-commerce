@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuHeaderComponent } from './menu-header/menu-header.component';
 import { RouterModule } from '@angular/router';
 import { CardProdutoComponent } from './card-produto/card-produto.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,6 +20,7 @@ import { CardProdutoComponent } from './card-produto/card-produto.component';
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule
   ],exports: [
     CarrinhoComprasComponent,
     HeaderComponent,

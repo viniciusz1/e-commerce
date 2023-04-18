@@ -1,6 +1,8 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { listaProdutos } from 'src/assets/produtos';
+import { Produto } from 'src/app/models/produto.model';
+import { ProdutoService } from 'src/app/services/produto.service';
 
 @Component({
   selector: 'app-home',
@@ -9,22 +11,16 @@ import { listaProdutos } from 'src/assets/produtos';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private produtoService: ProdutoService) { 
+    produtoService.produtosEmitter.subscribe(response => {
+      this.produtos = response
+    })
+  }
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe(param => {
-      this.produtos = []
-      for(let i of listaProdutos){
-        if(i.categoriaProduto == param['categoria']){
-          this.produtos.push(i)
-        }
-      }
-      if(this.produtos.length == 0){
-        this.produtos = listaProdutos
-      }
-    })
+    
     
   }
-  produtos = listaProdutos
+  produtos: Produto[] | undefined
 
 }
