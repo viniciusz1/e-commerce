@@ -1,0 +1,24 @@
+/* Selecionando a classe "fundo" */
+.fundo {
+    background-color: #f2f2f2;
+  }
+  
+  /* Selecionando a classe "titulo" dentro da div "sobre" */
+
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  /* Selecionando o elemento "h3" dentro da div "nome" */
+  .nome h3 {
+    text-transform: uppercase;
+  }
+  
+  /* Selecionando a div "todo" e definindo sua largura */
+  .todo {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
