@@ -5,6 +5,9 @@
         <a routerLink="/home" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
           <img src="assets/Empório.png" style="width: 100px;" alt="" srcset="">
         </a>
+        <form class="d-flex" role="search">
+          <input (input)="digitouAlgo(input)" #input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
 
         <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
           <li class="list-item">
