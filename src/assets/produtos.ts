@@ -4,7 +4,7 @@ export let listaProdutos: Produto[]=[
         fotoProduto: "https://www.gsuplementos.com.br/upload/produto/imagem/m_top-whey-protein-concentrado-1kg-growth-supplements.png",
         nomeProduto: "Whey Protein Concentrado (1KG)",
         valorProduto: "R$99,00",
-        descricaoProduto: "Ajuda Na Hipertrofia <br> Melhor custo x benefício <br> Alta concentração de proteína",
+        descricaoProduto: "Ajuda Na ipertrofia <br> Melhor custo x benefício <br> Alta concentração de proteína",
         categoriaProduto: "WheyProtein",
         codigoProduto: 0
     },
